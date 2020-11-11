@@ -1,0 +1,23 @@
+{
+  "name": "api-postgres",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node server.js",
+    "prepush": "npm run lint",
+    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "husky": "^4.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express-promise-router": "^4.0.1",
+    "pg": "^8.5.0"
+  }
+}
